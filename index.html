@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arti4D: Statistical Analysis and Modeling of the Spatio-temporal Variability in Articulated 4D Shapes</title>
+  
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 16px;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 60px;
+      padding-top: 40px;
+    }
+    
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    
+    .code-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1em;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    
+    .code-link:hover {
+      background-color: #555;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .header .subtitle {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 30px;
+      font-weight: 400;
+    }
+    
+    .representative-image {
+      width: 100%;
+      max-width: 1000px;
+      margin: 40px auto;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .pipeline-section {
+      margin: 60px 0;
+      padding: 30px 0;
+    }
+    
+    .pipeline-section h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #222;
+      text-align: center;
+    }
+    
+    .pipeline-section .description {
+      text-align: center;
+      color: #666;
+      font-size: 0.95em;
+      margin-bottom: 25px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+    
+    .pipeline-image {
+      width: 100%;
+      max-width: 1000px;
+      margin: 25px auto;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .video-section {
+      margin: 60px 0;
+      padding: 30px 0;
+    }
+    
+    .video-section h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #222;
+      text-align: center;
+    }
+    
+    .video-section .description {
+      text-align: center;
+      color: #666;
+      font-size: 0.95em;
+      margin-bottom: 25px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+    
+    .video-container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 80px;
+      padding: 40px 20px;
+      color: #666;
+      font-size: 0.875em;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Arti4D: Statistical Analysis and Modeling of the Spatio-temporal Variability in Articulated 4D Shapes</h1>
+    <div class="subtitle">Anonymous Submission</div>
+    <div style="text-align: center;">
+      <a href="https://github.com/Arti4D/Arti4D_code.git" target="_blank" class="code-link">Code</a>
+    </div>
+  </div>
+
+  <!-- Representative Image -->
+  <img src="Representative.jpg" alt="Representative Figure" class="representative-image">
+
+  <!-- Pipeline Overview -->
+  <div class="pipeline-section">
+    <h2>Overview</h2>
+    <div class="description">
+      Temporal alignment pipeline mapping trajectories to SRVF space for rate-invariant curve matching.
+    </div>
+    <img src="Picture2.png" alt="Temporal Alignment Pipeline" class="pipeline-image">
+  </div>
+
+  <!-- Video Sections -->
+  <div class="video-section">
+    <h2>Geodesic Artifacts</h2>
+    <div class="description">
+      By decoupling bending from stretching, our framework avoids non-plausible artifacts that occur in SRNF-based methods.
+    </div>
+    <div class="video-container">
+      <video controls preload="metadata">
+        <source src="Supplementary_Video/1_Geodesic artifacts.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <h2>Representation</h2>
+    <div class="description">
+      A 4D surface is represented as a trajectory in the product space of shape and pose parameters.
+    </div>
+    <div class="video-container">
+      <video controls preload="metadata">
+        <source src="Supplementary_Video/2_Representation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <h2>Pairwise Registration</h2>
+    <div class="description">
+      Temporal alignment is performed by mapping trajectories to SRVF space and computing optimal time-warping via Dynamic Programming.
+    </div>
+    <div class="video-container">
+      <video controls preload="metadata">
+        <source src="Supplementary_Video/3_Pairwise_registration.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <h2>Random Temporal Warping</h2>
+    <div class="description">
+      Our method accurately recovers temporal alignment even when random temporal diffeomorphisms introduce visible phase shifts.
+    </div>
+    <div class="video-container">
+      <video controls preload="metadata">
+        <source src="Supplementary_Video/4_Random_temporal_warping.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <h2>Geodesic</h2>
+    <div class="description">
+      Our method yields natural deformations along geodesic paths, avoiding unnatural shrinkage artifacts that occur in other methods.
+    </div>
+    <div class="video-container">
+      <video controls preload="metadata">
+        <source src="Supplementary_Video/5_Geodesic.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <h2>Co-registration</h2>
+    <div class="description">
+      We simultaneously compute the mean motion and optimal time warpings to synchronize motion phases across multiple 4D surfaces.
+    </div>
+    <div class="video-container">
+      <video controls preload="metadata">
+        <source src="Supplementary_Video/6_Co-registration.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <h2>PCA</h2>
+    <div class="description">
+      After temporal co-registration, PCA reveals meaningful principal modes of variation that capture genuine motion variability.
+    </div>
+    <div class="video-container">
+      <video controls preload="metadata">
+        <source src="Supplementary_Video/7_PCA.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <h2>Synthesis</h2>
+    <div class="description">
+      Novel 4D surfaces are generated by sampling along principal modes of variation from the learned statistical model.
+    </div>
+    <div class="video-container">
+      <video controls preload="metadata">
+        <source src="Supplementary_Video/8_Synthesis.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Anonymous Authors</p>
+  </div>
+
+</body>
+</html>
